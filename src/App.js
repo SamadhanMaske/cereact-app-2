@@ -3,6 +3,7 @@ import './App.css';
 import Form from './Components/Form';
 import LifeCycleA from './Components/LifeCycleA';
 import RefsDemo from './Components/RefsDemo';
+import FocusInput from './Components/FocusInput';
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
       {/* <Form/> */}
       {/* <LifeCycleA/> */}
 
-      <RefsDemo/>
+      {/* <RefsDemo/> */}
+
+      <FocusInput/>
     </div>
   );
 }
