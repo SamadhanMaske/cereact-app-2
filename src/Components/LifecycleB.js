@@ -12,8 +12,8 @@ class LifeCycleB extends Component {
     }
 
     static getDerivedStateFromProps(props,state){
-        console.log('LifeCycleB getDerivedStateFromProps');
-        return null; //returns object
+      console.log('LifeCycleB getDerivedStateFromProps');
+      return null; //returns object
     }
 
     shouldComponentUpdate(nextProps, nextState){
@@ -30,12 +30,11 @@ class LifeCycleB extends Component {
       console.log('Lifecycle B componentDidMount');
     }
     componentDidMount(){
-        console.log('LifeCycleB ComponentDidMount');
+      console.log('LifeCycleB ComponentDidMount');
     }
   render() {
     console.log('LifeCycleB render');
     return (
-        
       <div>LifeCycleB</div>
     )
   }
