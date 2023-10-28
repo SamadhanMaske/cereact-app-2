@@ -33,8 +33,8 @@ function App() {
       </ErrorBoundary>
        */}
 
-       <ClickCounter/>
-       <ComponentHover/>
+       <ClickCounter name='Samadhan'/>
+       <ComponentHover name='Manasi'/>
     </div>
   );
 }

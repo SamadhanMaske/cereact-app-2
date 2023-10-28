@@ -20,10 +20,10 @@ class ComponentHover extends Component {
     let {count, incrementCount} = this.props;
     return (
       <button onMouseOver={incrementCount}>
-        Hovered {count} times
+        Hovered {count} times by {this.props.name}
       </button>
     )
   }
 }
 
-export default withCounter(ComponentHover);
+export default withCounter(ComponentHover, 10);
