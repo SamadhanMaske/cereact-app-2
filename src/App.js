@@ -14,6 +14,8 @@ import HoverCounter2 from "./Components/HoverCounter2";
 import User from "./Components/User";
 import Counter2 from "./Components/Counter2";
 import PureParent from "./Components/PureParent";
+import ComponentC from "./Components/ComponentC";
+import { UserProvider } from "./Components/UserContext";
 
 function App() {
   return (
@@ -41,11 +43,11 @@ function App() {
       {/* <ClickCounter name='Samadhan'/>
        <ComponentHover name='Manasi'/> */}
 
+      {/* <PureParent /> */}
+
       {/* <ClickCounter2/>
        <HoverCounter2/>
-       <User name={(isLoggedIn)=>isLoggedIn?'Samadhan':'Guest'} /> */}
-
-      <PureParent/>
+      <User name={(isLoggedIn)=>isLoggedIn?'Samadhan':'Guest'} /> */}
 
       {/* <Counter2
         render={(count, incrementCount) => (
@@ -57,6 +59,10 @@ function App() {
           <HoverCounter2 count={count} incrementCount={incrementCount} />
         )}
       /> */}
+
+      <UserProvider value="Samadhan">
+        <ComponentC/>
+      </UserProvider>
 
     </div>
   );
