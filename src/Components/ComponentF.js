@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
-import { UserConsumer } from './UserContext'
+import { ChannelConsumer, UserConsumer } from './UserContext'
 
 class ComponentF extends Component {
     render() {
         return (
             <UserConsumer>
-                {
-                    name=>{
-                        return <div>Hello {name}</div>
-                    }
+                {name => {
+                    return (
+                        <ChannelConsumer>
+                            {channel => {
+                                return <div>Hello {name} {channel} from Component F</div>
+                            }
+                            }
+                        </ChannelConsumer>
+                    )
+                }
                 }
             </UserConsumer>
         )

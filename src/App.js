@@ -15,7 +15,7 @@ import User from "./Components/User";
 import Counter2 from "./Components/Counter2";
 import PureParent from "./Components/PureParent";
 import ComponentC from "./Components/ComponentC";
-import { UserProvider } from "./Components/UserContext";
+import { ChannelProvider, UserProvider } from "./Components/UserContext";
 
 function App() {
   return (
@@ -61,7 +61,9 @@ function App() {
       /> */}
 
       <UserProvider value="Samadhan">
-        <ComponentC/>
+        <ChannelProvider value="Maske">
+          <ComponentC />
+        </ChannelProvider>
       </UserProvider>
 
     </div>
